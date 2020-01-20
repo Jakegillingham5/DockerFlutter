@@ -22,7 +22,7 @@ ENV ANDROID_NDK=/opt/ndk/android-ndk-r$NDK_VERSION
 ENV PATH=${ANDROID_NDK}:${ANDROID_HOME}/emulator:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:/opt/buck/bin/:${PATH}
 
 #Fix installation
-RUN apt-get -y install --force-yes docker-ce=18.06.1~ce~3-0~ubuntu
+#RUN apt-get -y install --force-yes docker-ce=18.06.1~ce~3-0~ubuntu
 
 # Install system dependencies
 RUN apt update -qq && apt install -qq -y --no-install-recommends \
