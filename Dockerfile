@@ -42,7 +42,8 @@ RUN apt update -qq && apt install -qq -y --no-install-recommends \
 # install latest Ruby using ruby-install
 RUN apt-get update -qq \
   && apt-get install -qq -y --no-install-recommends \
-          bison \
+          coreutils \
+	  bison \
           zlib1g-dev \
           libyaml-dev \
           libssl-dev \
