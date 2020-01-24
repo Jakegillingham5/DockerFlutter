@@ -36,7 +36,6 @@ RUN apt update -qq && apt install -qq -y --no-install-recommends \
         python \
         openssh-client \
         unzip \
-        base64 \
     && rm -rf /var/lib/apt/lists/*;
 
 # install latest Ruby using ruby-install
