@@ -42,6 +42,7 @@ RUN apt update -qq && apt install -qq -y --no-install-recommends \
 RUN apt-get update -qq \
   && apt-get install -qq -y --no-install-recommends \
           coreutils \
+	  xxd \
 	  bison \
           zlib1g-dev \
           libyaml-dev \
