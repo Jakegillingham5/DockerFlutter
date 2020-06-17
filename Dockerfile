@@ -23,6 +23,7 @@ ENV PATH=${ANDROID_NDK}:${ANDROID_HOME}/emulator:${ANDROID_HOME}/tools:${ANDROID
 
 #Fix installation
 #RUN apt-get -y install --force-yes docker-ce=18.06.1~ce~3-0~ubuntu
+RUN wget -O /tmp/jdk-8u212-ojdkbuild-linux-x64.zip github.com/ojdkbuild/contrib_jdk8u-ci/releases/download/… && \ unzip -d /usr/lib/jvm/ /tmp/jdk-8u212-ojdkbuild-linux-x64.zip && \ rm /tmp/jdk-8u212-ojdkbuild-linux-x64.zip
 
 # Install system dependencies
 RUN apt update -qq && apt install -qq -y --no-install-recommends \
